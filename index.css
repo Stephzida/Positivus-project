@@ -323,7 +323,13 @@ span a{
     transform: translateX(100%);
   }
 }
+@media screen and (max-width:567px){
+  .marque{
 
+  animation: marque 10s ease-in-out infinite;
+ 
+}
+}
 @media screen and (max-width:327px) {
   .marque{
     gap:10px;
@@ -367,6 +373,7 @@ span a{
     border-radius: 20px;
     border-bottom: 4px solid black !important;
     border: 1px solid black;
+    padding: 20px;
   }
 .service-item1{
   display: flex;
@@ -632,4 +639,89 @@ span a{
   /* padding: 2px 0; */
   /* border: 1px solid black; */
 }
+.service-grid1 ,
+ .service-grid2 ,
+  .service-grid3 ,
+  .service-grid4 ,
+  .service-grid5 ,
+  .service-grid6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+    border-bottom: 4px solid black !important;
+    border: 1px solid black;
+    padding: 10px;
+  }
 } 
+
+/* for the fourth section */
+
+.contact-us-lg{
+  display: block;
+}
+.contact{
+  padding: 40px;
+}
+.contact-us-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(197, 197, 197);
+}
+.contact-grid1{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+.contact-grid1 button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: #F3F3F3;
+}
+.contact-grid2{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  margin: -35px 0;
+}
+
+/* for medium screens */
+.contact-us-md{
+  display: none;
+  padding: 0 20px;
+}
+
+.contact-flex{
+    display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 20px;
+}
+.contact-flex button{
+   width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: #F3F3F3;
+}
+.contact-br{
+  display: block;
+}
+
+
+@media screen and (max-width:767px) {
+  .contact-us-lg{
+    display: none;
+  }
+  .contact-us-md{
+    display: block;
+  }
+}
