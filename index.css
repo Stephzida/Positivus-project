@@ -414,7 +414,7 @@ span a{
 }
 
 .service-grid2{
-  background-color: #191A23;
+  background-color: #B9FF66;
 }
 .pay-per-click p{
    margin: 0;
@@ -625,6 +625,25 @@ span a{
 }}
  
 
+@media screen and (max-width:300px){
+  .service-flex{
+ font-size: 14px;
+
+}
+.services{
+  background-color: #B9FF66 !important;
+  padding:0 5px;
+  border-radius: 5px;
+}
+.service-grid{
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+  padding:0;
+  
+}
+} 
+
 @media screen and (max-width:294px){
   .service-grid p , a{
   font-size:0.5em;
@@ -729,6 +748,20 @@ span a{
 }
 }
 
+@media screen and (max-width:300px){
+  .contact-us-md{
+  display: block;
+  padding: 0 ;
+}
+.contact-flex{
+  
+  gap: 20px;
+  padding: 20px;
+ font-size: 14px;
+  border-radius: 12px;
+}
+}
+
 /* for the fifth section */
 
 .case-lg{
@@ -821,6 +854,186 @@ span a{
   text-align: center;
 }
 .case-br{
+  display: none;
+}
+
+}
+@media screen and (max-width:300px){
+.case-grid-md{
+  
+  padding: 0;
+  
+}
+.case-studies{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.case-grid-md{
+ font-size: 14px;
+  
+}  
+
+}
+@media screen and (max-width:170px){
+.case-grid-md{
+ font-size: 12px;
+  
+}  
+ 
+
+}
+
+/* for section six */
+.work-container {
+  padding: 40px 0;
+  /* margin-top: 10px; */
+}
+.working-process{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+.working-head{
+  background-color: #B9FF66;
+  padding: 5px;
+  border-radius: 5px;
+}
+.accordion-container{
+  padding: 20px 0;
+}
+.accordion{
+  background-color: #F3F3F3;
+  border-radius: 12px;
+  padding: 20px 40px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #191A23;
+  border-top: 1px solid #191A23;
+  border-left:1px solid #191A23 ;
+  border-right:1px solid #191A23 ;
+}
+.accordion:hover{
+  background-color: #B9FF66;
+}
+.accordion-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+.accordion-content{
+  margin-top: 15px;
+  font-size: 14px;
+  display: none;
+}
+.accordion-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.empty-div{
+  width: 100%;
+  border-top: 1px solid black;
+}
+.accordion.open .accordion-content{
+  display: block;
+}
+.accordion-icon {
+  border-radius: 100%;
+  background-color: #F3F3F3;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.working-lg{
+  display: block;
+}
+.working-md{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .working-lg{
+  display: none;
+}
+.working-md{
+  display: block;
+}
+.working-process{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center ;
+}
+.accordion-container{
+  padding: 20px;
+}
+
+}
+@media screen  and (max-width:300px) {
+  .accordion-header{
+  font-weight: medium;
+  font-size: 14px;
+}
+.accordion-content{
+  margin-top: 15px;
+  font-size: 12px;
+  display: none;
+}
+.working-process{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+}
+@media screen  and (max-width:300px) {
+.accordion{
+  background-color: #F3F3F3;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #191A23;
+  border-top: 1px solid #191A23;
+  border-left:1px solid #191A23 ;
+  border-right:1px solid #191A23 ;
+}
+}
+@media screen  and (max-width:300px) {
+.accordion{
+  background-color: #F3F3F3;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #191A23;
+  border-top: 1px solid #191A23;
+  border-left:1px solid #191A23 ;
+  border-right:1px solid #191A23 ;
+}
+.accordion-container{
+  padding: 0;
+}
+}
+@media screen  and (max-width:200px) {
+    .accordion-header{
+  font-weight: small;
+  font-size: 12px;
+}
+.accordion-content{
+  margin-top: 15px;
+  font-size: 12px;
   display: none;
 }
 

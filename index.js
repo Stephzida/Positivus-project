@@ -9,3 +9,8 @@ hamburgerIcon.addEventListener('click', () => {
 closeSidebar.addEventListener('click', () => {
   sidebar.classList.remove('sidebar-open');
 });
+
+function toggleAccordion(id){
+  const element = document.getElementById(id);
+  element.classList.toggle("open");
+}
